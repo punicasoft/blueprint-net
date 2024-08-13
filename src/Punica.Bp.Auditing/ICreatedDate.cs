@@ -2,6 +2,6 @@
 {
     public interface ICreatedDate
     {
-        DateTime CreatedOn { get; set; }
+        DateTime CreatedOn { get; }
     }
 }

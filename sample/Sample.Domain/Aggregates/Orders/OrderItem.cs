@@ -6,7 +6,6 @@ namespace Sample.Domain.Aggregates.Orders
     {
         public Guid ProductId { get; private set; }
         public string ProductName { get; private set;}
-
         public decimal UnitPrice { get; private set;}
         public int Units { get; private set;}
 

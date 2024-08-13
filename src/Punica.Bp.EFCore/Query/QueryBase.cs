@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-//using Punica.Linq.Dynamic.Old;
+using Punica.Bp.Application.Query;
 
 namespace Punica.Bp.EFCore.Query
 {
@@ -14,21 +14,10 @@ namespace Punica.Bp.EFCore.Query
         }
 
         // TODO: add where facility again
-        protected List<dynamic> GetList<TEntity>(string columns, string filter) where TEntity : class
+        protected List<dynamic> GetList<TEntity>(QueryOptions<TEntity> options) where TEntity : class
         {
             var query = _dbContext.Set<TEntity>().AsNoTracking();
-
-          //  Evaluator evaluator = new Evaluator(typeof(IQueryable<TEntity>), null);
-           // var expression1 = TextParser.Evaluate(columns, evaluator);
-
-            //var resultExpression = evaluator.GetFilterExpression<IQueryable<TEntity>, IQueryable<dynamic>>(expression1[0]);
-
-            //var actual = resultExpression.Compile()(query).ToList();
-
-            //return actual;
-
-            return null;
-
+            return options.ApplyTo(query);
         }
 
     }

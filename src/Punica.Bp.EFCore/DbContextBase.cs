@@ -26,7 +26,7 @@ namespace Punica.Bp.EFCore
             throw new NotImplementedException();
         }
 
-        protected override void OnModelCreating([NotNull] ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 

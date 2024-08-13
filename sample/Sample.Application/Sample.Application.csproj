@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Punica.Bp.Application\Punica.Bp.Application.csproj" />
     <ProjectReference Include="..\..\src\Punica.Bp.CQRS\Punica.Bp.CQRS.csproj" />
     <ProjectReference Include="..\Sample.Domain\Sample.Domain.csproj" />
   </ItemGroup>

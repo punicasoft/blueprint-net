@@ -8,7 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.2" />
-    <PackageReference Include="Punica" Version="1.0.0" />
+    <PackageReference Include="Punica" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Punica.Bp.Application\Punica.Bp.Application.csproj" />
   </ItemGroup>
 
 </Project>

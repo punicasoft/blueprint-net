@@ -2,6 +2,6 @@
 {
     public interface IModifiedDate
     {
-        DateTime ModifiedOn { get; set; }
+        DateTime ModifiedOn { get;  }
     }
 }

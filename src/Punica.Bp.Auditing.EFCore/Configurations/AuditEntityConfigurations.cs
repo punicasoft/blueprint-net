@@ -59,7 +59,7 @@ namespace Punica.Bp.Auditing.EFCore.Configurations
                     .IsRequired()
                     .HasColumnName(nameof(ISoftDeletable.Deleted));
 
-                builder.AddQueryFilter<ISoftDeletable>(e =>  e.Deleted == false);
+                builder.AddQueryFilter<ISoftDeletable>(e =>  !e.Deleted);
 
                 //Expression<Func<TEntity, bool>> expression = e => !EF.Property<bool>(e, nameof(ISoftDeletable.Deleted));
 

@@ -2,6 +2,6 @@
 {
     public interface IModifiedBy
     {
-        Guid ModifiedBy { get; set; }
+        Guid ModifiedBy { get; }
     }
 }
