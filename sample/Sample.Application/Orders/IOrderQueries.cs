@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Punica.Bp.Application.Query;
 
 namespace Sample.Application.Orders
 {
     public interface IOrderQueries
     {
-        List<dynamic> GetPersons(string columns, string filter);
+        List<dynamic> GetPersons(QueryOptions<Order> options);
     }
 }
